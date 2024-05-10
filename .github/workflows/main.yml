@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
+      - name: Run Feed Generator
+        uses: thekix/github-actions-course-docker@main
       - name: SetupPython
         uses: actions/setup-python@v4
         with: 
